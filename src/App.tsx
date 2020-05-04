@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Sample from './Sample';
+import FC from './FC';
+import Hooks from './Hooks';
 
 interface State {
   x: number;
@@ -62,8 +64,15 @@ class App extends React.Component<{}, State>  {
             { this.state.x }
           
           </div>
+          <div className='app-hooks'>
+            <Hooks/>
+          </div>
+
           <div>
             <Sample x={this.state.x}/>
+          </div>
+          <div>
+            <FC title={"aaaa"}/>
           </div>
 
         </header>

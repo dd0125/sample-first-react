@@ -22,7 +22,7 @@ class Sample extends React.Component<Props, State>  {
   render() {
     return (
       <div className="sample">
-          <h1>サンプル</h1>
+          <h3>サンプル</h3>
           props.x = 
           { this.props.x }
 
