@@ -5,7 +5,7 @@ type Props = {
 
 
 
-const Hooks: React.FC<Props> = (props): React.ReactElement => {
+const UseState: React.FC<Props> = (props): React.ReactElement => {
   const [count, setCount] = React.useState<number>(0);
 
   const onClick = () => {
@@ -14,7 +14,7 @@ const Hooks: React.FC<Props> = (props): React.ReactElement => {
 
   const result: React.ReactElement[] = [];
   result.push(<div>
-    <h2>Hooks</h2>
+    <h2>UseState</h2>
       ddd
   </div>);
   result.push(<div>
@@ -26,4 +26,4 @@ const Hooks: React.FC<Props> = (props): React.ReactElement => {
   </>;
 }
 
-export default Hooks;
+export default UseState;

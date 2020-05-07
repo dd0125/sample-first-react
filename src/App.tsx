@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import Sample from './Sample';
 import FC from './FC';
-import Hooks from './Hooks';
+import UseState from './Hooks/UseState';
+import UseEffect from './Hooks/UseEffect';
+import UseContext from './Hooks/UseContext';
 
 interface State {
   x: number;
@@ -64,16 +66,22 @@ class App extends React.Component<{}, State>  {
             { this.state.x }
           
           </div>
-          <div className='app-hooks'>
-            <Hooks/>
+          <div className='app-use-state'>
+            <UseState/>
+          </div>
+          <div className='app-use-effect'>
+            <UseEffect/>
+          </div>
+          <div className='app-use-context'>
+            <UseContext/>
           </div>
 
-          <div>
+          {/* <div>
             <Sample x={this.state.x}/>
           </div>
           <div>
             <FC title={"aaaa"}/>
-          </div>
+          </div> */}
 
         </header>
       </div>

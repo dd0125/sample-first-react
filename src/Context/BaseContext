@@ -1,0 +1,23 @@
+import React, { createContext, useState } from 'react';
+
+// type Props = {
+// }
+
+export const BaseContext = createContext([
+  { size: 0, color: '#FFFFFF' },
+  () => {}
+]);
+
+
+// export function FontContextProvider(props: any) {
+//   const [value, setValue] = useState({
+//     size: 16,
+//     color: '#FF0000'
+//   });
+
+//   return (
+//     <FontContext.Provider value={[value, setValue]}>
+//       {props.children}
+//     </FontContext.Provider>
+//   );
+// }
